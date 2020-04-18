@@ -1,5 +1,49 @@
-:host  {
-    width:230px;
-    background-color: cadetblue;
-    height: calc(100vh - 70px);
+:host {
+  width: 230px;
+  height: calc(100vh - 70px);
+}
+
+form {
+  height: 100%;
+}
+
+.form-select {
+  width: 210px;
+  padding: 10px;
+}
+
+.form-field {
+  padding-top: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.btn {
+  height: 40px;
+  border: none;
+  width: 100px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reset {
+  border: 1px solid #4aa77b;
+  background-color: white;
+  color: #4aa77b;
+  margin-right: 10px;
+}
+
+.submit {
+  background-color: #4aa77b;
+  color: white;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 1px solid #dddddd;
+}
+
+.buttons {
+  margin: 10px;
 }

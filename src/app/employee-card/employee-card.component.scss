@@ -1,26 +1,25 @@
 .employee-card {
   width: 290px;
-  height: 245px;
+  height: 320px;
   border: solid 1px #dddddd;
   border-radius: 5px;
   margin: 10px;
   background-color: white;
-  font-size: small;
+  font-size: 12px;
 }
 .emp-info {
-  height: 50px;
+  height: 70px;
   margin: 10px;
 }
 
 .row-height {
-  height: 35px;
+  height: 45px;
 }
 
 .emp-work-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 35px;
 }
 
 .emp-name {
@@ -29,12 +28,12 @@
 }
 
 .avatar {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
 }
 
-.send-icon {
+.border-icon {
   width: 30px;
   height: 30px;
   display: flex;
@@ -42,7 +41,7 @@
   justify-content: center;
   border-radius: 50%;
   color: #666666;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 0px 5px 0 rgba(68, 46, 46, 0.2);
 }
 
 .separator {
@@ -54,8 +53,23 @@
   content: "";
   position: absolute;
   border-top: 1px solid #dddddd;
-  width: 38px;
-  top: -19px;
+  width: 47px;
+  top: -22px;
   transform: rotate(105deg);
   transform-origin: 0% 0%;
+}
+
+.email {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 110px;
+}
+
+.phone-icon {
+  color: #3562af;
+}
+
+.email-icon {
+  color: #c4473c;
 }

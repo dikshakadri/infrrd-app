@@ -1,11 +1,11 @@
 :host {
   flex: 1;
   background-color: #f8fcfa;
+  box-shadow: 0 0px 5px 0 rgba(68, 46, 46, 0.2);
 }
 
 .employees-container {
   height: calc(100vh - 70px);
-  overflow: auto;
 }
 
 .employees-card {

@@ -3,9 +3,18 @@
  * Remove the margin in all browsers.
  */
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  font-family: fa5-proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.font-grey {
+  color: #cccccc;
 }
 
 .font-grey-1 {
@@ -38,6 +47,31 @@ body {
   padding-right: 10px;
 }
 
+.pl-5 {
+  padding-left: 5px;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
 .border-bottom {
   border-bottom: 1px solid #ddd;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+  overflow-x: hidden;
 }

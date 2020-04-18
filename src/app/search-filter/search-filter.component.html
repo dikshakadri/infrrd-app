@@ -1,1 +1,88 @@
-<p>search-filter works!</p>
+<form class="form-container" [formGroup]="filterForm" (ngSubmit)="onSubmit()" novalidate>
+    <div class="overflow-y-auto">
+        <div class="full-width form-field">
+            <label class="fs-12 pl-10 font-grey-2">Department</label>
+            <mat-select class="form-select" formControlName="department">
+                <mat-option *ngFor="let dept of departments" [value]="dept">
+                    {{dept.value}}
+                </mat-option>
+            </mat-select>
+        </div>
+
+        <div class="full-width form-field">
+            <label class="fs-12 pl-10 font-grey-2">Role Type</label>
+            <mat-select class="form-select" formControlName="roleType">
+                <mat-option *ngFor="let role of roleTypes" [value]="role">
+                    {{role.value}}
+                </mat-option>
+            </mat-select>
+        </div>
+
+        <div class="full-width form-field">
+            <label class="fs-12 pl-10 font-grey-2">Designation</label>
+            <mat-select class="form-select" formControlName="designation">
+                <mat-option *ngFor="let desg of designations" [value]="desg">
+                    {{desg.value}}
+                </mat-option>
+            </mat-select>
+        </div>
+
+        <div class="full-width form-field">
+            <label class="fs-12 pl-10 font-grey-2">Experience</label>
+            <mat-select class="form-select" formControlName="exp">
+                <mat-option *ngFor="let e of exps" [value]="e">
+                    {{e.value}}
+                </mat-option>
+            </mat-select>
+        </div>
+
+        <div class="full-width form-field">
+            <label class="fs-12 pl-10 font-grey-2">Year of Joining</label>
+            <mat-select class="form-select" formControlName="yoj">
+                <mat-option *ngFor="let y of yojs" [value]="y">
+                    {{y.value}}
+                </mat-option>
+            </mat-select>
+        </div>
+
+        <div class="full-width form-field">
+            <label class="fs-12 pl-10 font-grey-2">Location</label>
+            <mat-select class="form-select" formControlName="location">
+                <mat-option *ngFor="let loc of locations" [value]="loc">
+                    {{loc.value}}
+                </mat-option>
+            </mat-select>
+        </div>
+
+        <div class="full-width form-field">
+            <label class="fs-12 pl-10 font-grey-2">Teams</label>
+            <mat-select class="form-select" formControlName="team">
+                <mat-option *ngFor="let t of teams" [value]="t">
+                    {{t.value}}
+                </mat-option>
+            </mat-select>
+        </div>
+    </div>
+
+
+
+
+    <div class="buttons">
+        <button class="btn reset" type="reset">Clear</button>
+        <button class="btn submit" type="submit">Submit</button>
+    </div>
+</form>
+
+
+
+
+
+
+<!-- <div class="selectDept">
+    <span>Department</span>
+    <select formControlName="department">
+        <option *ngFor="let dept of departments" [value]="dept">
+            {{dept.value}}
+        </option>
+    </select>
+</div> -->

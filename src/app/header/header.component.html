@@ -1,1 +1,8 @@
-<p>header works!</p>
+<button class="menu-button" [matMenuTriggerFor]="menu">
+    <fa-icon class="font-grey" [icon]="faUsers"></fa-icon><span class="pl-5 pr-5">Choose Team</span>
+    <fa-icon [icon]="faAngleDown"></fa-icon>
+</button>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item>Product Teams</button>
+    <button *ngFor="let enum of teams | keyvalue" mat-menu-item>{{ enum.value}}</button>
+</mat-menu>

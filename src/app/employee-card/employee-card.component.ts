@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'infrrd-employee-card',
@@ -8,6 +8,8 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 })
 export class EmployeeCardComponent implements OnInit {
   faPaperPlane = faPaperPlane;
+  faPhoneAlt = faPhoneAlt;
+  faEnvelope = faEnvelope;
   constructor() { }
 
   ngOnInit(): void {
