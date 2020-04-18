@@ -1,0 +1,49 @@
+@import '../../variables';
+:host {
+    width: 200px;
+    background-color:#FEFEFE;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 100%;
+}
+fa-icon {
+  padding-right: 10px;
+}
+.menu {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    
+  }
+  
+  li {
+    display: block;
+    color:$infrrd-green;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  li:hover:not(.active) {
+    background-color:#EAF4F0;
+    color: $infrrd-green;
+  }
+
+  .spacer {
+    flex-grow: 1;
+    height:300px;
+  }

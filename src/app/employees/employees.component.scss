@@ -1,0 +1,15 @@
+:host {
+  flex: 1;
+  background-color: #f8fcfa;
+}
+
+.employees-container {
+  height: calc(100vh - 70px);
+  overflow: auto;
+}
+
+.employees-card {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}

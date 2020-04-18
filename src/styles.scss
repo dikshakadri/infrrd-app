@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+  font-family: fa5-proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-grey-1 {
+  color: #999999;
+}
+.font-grey-2 {
+  color: #666666;
+}
+.font-grey-3 {
+  color: #333333;
+}
+.border-grey-1 {
+  color: #efefef;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ddd;
+}
