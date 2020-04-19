@@ -15,7 +15,6 @@ import { HeaderComponent } from './header/header.component';
 import { SearchFilterComponent } from './search-filter/search-filter.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { EmployeeCardComponent } from './employee-card/employee-card.component';
-import { RatingComponent } from './rating/rating.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,8 +23,7 @@ import { RatingComponent } from './rating/rating.component';
     HeaderComponent,
     SearchFilterComponent,
     EmployeesComponent,
-    EmployeeCardComponent,
-    RatingComponent
+    EmployeeCardComponent
   ],
   imports: [
     BrowserModule,
