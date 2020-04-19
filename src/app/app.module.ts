@@ -1,20 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSelectModule } from '@angular/material/select';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 import { AppRoutingModule } from './app-routing.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NgxStarRatingModule } from 'ngx-star-rating';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchFilterComponent } from './search-filter/search-filter.component';
 import { EmployeesComponent } from './employees/employees.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EmployeeCardComponent } from './employee-card/employee-card.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReactiveFormsModule } from '@angular/forms';
-
+import { RatingComponent } from './rating/rating.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,17 +24,20 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     SearchFilterComponent,
     EmployeesComponent,
-    EmployeeCardComponent
+    EmployeeCardComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
     MatMenuModule,
     MatInputModule,
     MatSelectModule,
-    AppRoutingModule,  
+    AppRoutingModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    NgxStarRatingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

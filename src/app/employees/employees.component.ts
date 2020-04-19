@@ -18,16 +18,23 @@ export class EmployeesComponent implements OnInit, OnDestroy {
     this.subscription = this.empService.listenEmployeeFilter().subscribe((data) => {
       if (data['teamkey'])
         this.employees = this.empService.getEmployeeByTeam(data['teamkey']);
+      else if (data['BLR'])
+      this.employees = this.empService.getEmployeeByLoc(data);
       else
         this.employees = this.empService.getEmployeeBySearch(data);
-      console.log(this.employees)
     })
   }
-
+  
   ngOnDestroy() {
     this.subscription.unsubscribe();
   }
 
-
+  onCheck(event: any) {
+    if(event.currentTarget.checked){
+      this.empService.triggerEmployeeFilter({ 'BLR':'Bangalore' });
+    } else {
+      this.employees = this.empService.employeeData;
+    }
+  }
 
 }

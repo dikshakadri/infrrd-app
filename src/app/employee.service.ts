@@ -38,6 +38,10 @@ export class EmployeeService {
     return this.employeeData.filter((employee: Employee) => employee.currentTeam === Teams[team]);
   }
 
+  public getEmployeeByLoc(loc: any): Employee[] {
+    return this.employeeData.filter((employee: Employee) => employee.location === loc.BLR);
+  }
+
   public getEmployeeBySearch(data: any) {
     return this.employeeData.filter((employee: Employee) => {
       if (employee.currentTeam === Teams[data.team.key] &&

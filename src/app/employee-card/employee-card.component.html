@@ -1,6 +1,6 @@
 <div class="employee-card">
     <div class="emp-info flex-center">
-        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+        <img [src]="employee.image" alt="Avatar" class="avatar">
         <div class="emp-name">
             <span class="font-grey-3 fs-14">{{employee.name}}</span><br>
             <span class="font-grey-2 fs-14">{{employee.designation}}</span>
@@ -9,8 +9,9 @@
             <fa-icon [icon]="faPaperPlane"></fa-icon>
         </div>
     </div>
-    <div class="row-height flex-center pl-10 pr-10 border-bottom">
-        <span class="font-grey-1">{{employee.rating}}</span>
+    <div class="rating row-height flex-center pl-10 pr-10 border-bottom">
+        <span class="font-grey-1 pr-10">{{employee.rating}} Rating</span>
+        <ngx-star-rating [(ngModel)]="employee.rating"  [id]="employee.employeeNo" [disabled]="true"></ngx-star-rating>
     </div>
     <div class="row-height emp-work-info pl-10 pr-10 border-bottom">
         <div><span class="font-grey-1">Experience: </span> <span class="font-grey-3">{{employee.exp}}</span></div>

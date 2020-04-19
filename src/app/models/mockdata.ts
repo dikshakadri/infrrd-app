@@ -4,7 +4,7 @@ export const EmployeeData = [
     {
       "employeeNo": "EMP1001",
       "name": "Andrew Bidgen",
-      "image": "",
+      "image": "https://www.w3schools.com/howto/img_avatar.png",
       "designation": "Senior UI Developer",
       "rating": "3",
       "exp": "5 Years above",
@@ -20,7 +20,7 @@ export const EmployeeData = [
     {
       "employeeNo": "EMP1002",
       "name": "John Bidgen",
-      "image": "",
+      "image": "https://www.w3schools.com/howto/img_avatar2.png",
       "designation": "Technical Architect",
       "rating": "4",
       "exp": "5 Years above",
@@ -36,7 +36,7 @@ export const EmployeeData = [
     {
       "employeeNo": "EMP1003",
       "name": "Jane Bidgen",
-      "image": "",
+      "image": "https://www.w3schools.com/howto/img_avatar.png",
       "designation": "Senior UI Developer",
       "rating": "4",
       "exp": "4 Years",
@@ -52,7 +52,7 @@ export const EmployeeData = [
     {
       "employeeNo": "EMP1004",
       "name": "Jessy Bidgen",
-      "image": "",
+      "image": "https://www.w3schools.com/howto/img_avatar2.png",
       "designation": "Junior UI Developer",
       "rating": "4",
       "exp": "1 Year",
@@ -68,7 +68,7 @@ export const EmployeeData = [
     {
       "employeeNo": "EMP1005",
       "name": "Jean Bidgen",
-      "image": "",
+      "image": "https://www.w3schools.com/howto/img_avatar2.png",
       "designation": "Technical Architect",
       "rating": "4",
       "exp": "5 Years above",
@@ -84,7 +84,7 @@ export const EmployeeData = [
     {
       "employeeNo": "EMP1006",
       "name": "Anne Bidgen",
-      "image": "",
+      "image": "https://www.w3schools.com/howto/img_avatar.png",
       "designation": "QA Analyst Lead",
       "rating": "3",
       "exp": "4 Years",
@@ -100,9 +100,9 @@ export const EmployeeData = [
     {
       "employeeNo": "EMP1007",
       "name": "Allison Bidgen",
-      "image": "",
+      "image": "https://www.w3schools.com/howto/img_avatar2.png",
       "designation": "Junior UI Developer",
-      "rating": "5",
+      "rating": "2",
       "exp": "2 Years",
       "doj": "2018",
       "currentTeam": Teams.OCBC,
@@ -116,7 +116,7 @@ export const EmployeeData = [
     {
       "employeeNo": "EMP1008",
       "name": "Mike Bidgen",
-      "image": "",
+      "image": "https://www.w3schools.com/howto/img_avatar.png",
       "designation": "Technical Architect",
       "rating": "4",
       "exp": "5 Years above",
@@ -132,7 +132,7 @@ export const EmployeeData = [
     {
       "employeeNo": "EMP1009",
       "name": "Jack Bidgen",
-      "image": "",
+      "image": "https://www.w3schools.com/howto/img_avatar2.png",
       "designation": "Technical Architect",
       "rating": "4",
       "exp": "5 Years above",
@@ -148,7 +148,7 @@ export const EmployeeData = [
     {
       "employeeNo": "EMP1010",
       "name": "Jill Bidgen",
-      "image": "",
+      "image": "https://www.w3schools.com/howto/img_avatar.png",
       "designation": "Junior UI Developer",
       "rating": "3",
       "exp": "3 Years",
@@ -164,7 +164,7 @@ export const EmployeeData = [
     {
       "employeeNo": "EMP1011",
       "name": "Jay Bidgen",
-      "image": "",
+      "image": "https://www.w3schools.com/howto/img_avatar2.png",
       "designation": "Senior UI Developer",
       "rating": "3",
       "exp": "5 Years above",
@@ -180,7 +180,7 @@ export const EmployeeData = [
     {
       "employeeNo": "EMP1012",
       "name": "May Bidgen",
-      "image": "",
+      "image": "https://www.w3schools.com/howto/img_avatar.png",
       "designation": "Senior UI Developer",
       "rating": "3",
       "exp": "5 Years above",
@@ -196,7 +196,7 @@ export const EmployeeData = [
     {
       "employeeNo": "EMP1013",
       "name": "June Bidgen",
-      "image": "",
+      "image": "https://www.w3schools.com/howto/img_avatar2.png",
       "designation": "Senior UI Developer",
       "rating": "3",
       "exp": "5 Years above",
