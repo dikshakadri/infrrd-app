@@ -1,6 +1,7 @@
 :host {
   width: 230px;
   height: calc(100vh - 70px);
+  position: relative;
 }
 
 form {
@@ -46,4 +47,23 @@ form {
 
 .buttons {
   margin: 10px;
+}
+
+.toggleSearch {
+  position: absolute;
+  left: -10px;
+  top: 264px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.border-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #444444;
+  box-shadow: 0 0px 5px 0 rgba(68, 46, 46, 0.2);
 }

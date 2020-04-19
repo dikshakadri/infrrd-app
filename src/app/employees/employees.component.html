@@ -1,5 +1,7 @@
 <div class="employees-container overflow-y-auto">
     <div class="employees-card">
-        <infrrd-employee-card *ngFor="let i of [1, 2, 3, 4, 5]"></infrrd-employee-card>
+        <ng-container *ngFor="let emp of employees">
+            <infrrd-employee-card [employee]="emp" ></infrrd-employee-card>
+        </ng-container>
     </div>
 </div>

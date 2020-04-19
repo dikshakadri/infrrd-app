@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
+import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'infrrd-home',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  isFilterOpen: boolean = false;
+  constructor(public empService: EmployeeService) {
+  }
 
   ngOnInit(): void {
   }
+  
 
 }

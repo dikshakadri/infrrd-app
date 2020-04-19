@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from "@angular/forms";
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import {
   DepartmentsArray, TeamsArray,
   LocationArray, YearOfJoinArray, ExperienceArray,
   DesignationArray, RolesArray
 } from '../models/employee.model';
 import { ThrowStmt } from '@angular/compiler';
+import { EmployeeService } from '../employee.service';
 @Component({
   selector: 'infrrd-search-filter',
   templateUrl: './search-filter.component.html',
@@ -20,23 +22,13 @@ export class SearchFilterComponent implements OnInit {
   yojs = YearOfJoinArray;
   locations = LocationArray;
   teams = TeamsArray;
-  constructor() {
+  faChevronLeft = faChevronLeft;
+  constructor(private empService: EmployeeService) {
     this.filterForm = this.createFormGroup()
   }
 
   ngOnInit(): void {
-    console.log(this.departments);
-    // this.filterForm.controls.department.setValue(this.departments.FrontendDevelopment);
-
-    this.filterForm.setValue({
-      department: this.departments[0],
-      roleType: this.roleTypes[0],
-      designation: this.designations[0],
-      exp: this.exps[0],
-      yoj: this.yojs[0],
-      location: this.locations[0],
-      team: this.teams[0]
-    });
+    this.setInitialValue();
   }
 
   createFormGroup() {
@@ -51,8 +43,30 @@ export class SearchFilterComponent implements OnInit {
     })
   }
 
-  onSubmit() {
+  setInitialValue() {
+    this.filterForm.setValue({
+      department: this.departments[0],
+      roleType: this.roleTypes[0],
+      designation: this.designations[0],
+      exp: this.exps[0],
+      yoj: this.yojs[0],
+      location: this.locations[0],
+      team: this.teams[0]
+    });
+  }
+
+  onClear() {
+    this.setInitialValue();
     console.log(this.filterForm);
+  }
+
+  onSubmit() {
+    console.log(this.filterForm.value);
+    this.empService.triggerEmployeeFilter(this.filterForm.value);
+  }
+
+  onSearch() {
+    this.empService.toggleSearch();
   }
 
 }

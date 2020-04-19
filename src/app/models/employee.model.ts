@@ -1,12 +1,13 @@
 import { FormControl } from '@angular/forms';
 
 export class Employee {
+    employeeNo: string;
     image: string;
     name: string;
     designation: string;
     rating: string;
     exp: string;
-    doj: Date | null;
+    doj: string;
     currentTeam: Teams;
     reportingManager: string;
     phone: string;
@@ -17,9 +18,9 @@ export class Employee {
 }
 
 export enum Departments {
-    FrontendDevelopment = 'Frontend Development',
-    MLEngineering = "ML Engineering",
-    QualityAnalyst = "QualityAnalyst",
+    FEDEV = "Frontend Development",
+    MLENG = "ML Engineering",
+    QA = "QualityAnalyst",
     HRM = "Human Resource Management",
     RnD = "Research $ Development"
 }
@@ -29,6 +30,7 @@ export enum Teams {
     OCBC = 'OCBC',
     RDN = 'Radian',
     RTY = 'Rustify',
+    PT = 'Product Teams'
 }
 
 export const TeamsArray  = [
@@ -39,9 +41,9 @@ export const TeamsArray  = [
 ]
 
 export const DepartmentsArray = [
-    { key: 'FEDEV', value: Departments.FrontendDevelopment },
-    { key: 'MLENG', value: Departments.MLEngineering },
-    { key: 'QA', value: Departments.QualityAnalyst },
+    { key: 'FEDEV', value: Departments.FEDEV },
+    { key: 'MLENG', value: Departments.MLENG },
+    { key: 'QA', value: Departments.QA },
     { key: 'HRM', value: Departments.HRM },
     { key: 'RnD', value: Departments.RnD },
 ]

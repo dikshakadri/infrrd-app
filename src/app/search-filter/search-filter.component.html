@@ -68,10 +68,12 @@
 
 
     <div class="buttons">
-        <button class="btn reset" type="reset">Clear</button>
+        <button class="btn reset" (click)="onClear()">Clear</button>
         <button class="btn submit" type="submit">Submit</button>
     </div>
 </form>
+
+<div class="toggleSearch border-icon" (click)="onSearch()"><fa-icon [icon]="faChevronLeft"></fa-icon></div>
 
 
 

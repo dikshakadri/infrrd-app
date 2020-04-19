@@ -1,14 +1,16 @@
-@import '../../variables';
+@import "../../variables";
 :host {
-    width: 200px;
-    background-color:#FEFEFE;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0px 5px 0 rgba(68, 46, 46, 0.2);
+  width: 200px;
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0px 5px 0 rgba(68, 46, 46, 0.2);
+
+  position: relative;
 }
 
 .logo {
-    width: 100%;
+  width: 100%;
 }
 fa-icon {
   padding-right: 10px;
@@ -20,32 +22,31 @@ fa-icon {
   justify-content: space-between;
 }
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    
-  }
-  
-  li {
-    display: block;
-    color:$infrrd-green;
-    padding: 8px 16px;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  li.active {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  li:hover:not(.active) {
-    background-color:#EAF4F0;
-    color: $infrrd-green;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
 
-  .spacer {
-    flex-grow: 1;
-    height:300px;
-  }
+li {
+  display: block;
+  color: $infrrd-green;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+li:hover:not(.active) {
+  background-color: #eaf4f0;
+  color: $infrrd-green;
+}
+
+.spacer {
+  flex-grow: 1;
+  height: 300px;
+}

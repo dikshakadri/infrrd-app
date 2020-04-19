@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { faPaperPlane, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Employee } from '../models/employee.model';
 
 @Component({
   selector: 'infrrd-employee-card',
@@ -7,6 +8,7 @@ import { faPaperPlane, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-sv
   styleUrls: ['./employee-card.component.scss']
 })
 export class EmployeeCardComponent implements OnInit {
+  @Input() employee : Employee;
   faPaperPlane = faPaperPlane;
   faPhoneAlt = faPhoneAlt;
   faEnvelope = faEnvelope;

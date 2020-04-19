@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faEnvelope, faSearch, faUser, faComment, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'infrrd-menu',
@@ -12,10 +13,12 @@ export class MenuComponent implements OnInit {
   faUser = faUser;
   faComment = faComment;
   faSignOutAlt = faSignOutAlt;
-
-  constructor() { }
+  constructor(private empService: EmployeeService) { }
 
   ngOnInit(): void {
   }
 
+  onSearch() {
+    this.empService.toggleSearch();
+  }
 }

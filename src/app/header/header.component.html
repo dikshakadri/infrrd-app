@@ -3,6 +3,6 @@
     <fa-icon [icon]="faAngleDown"></fa-icon>
 </button>
 <mat-menu #menu="matMenu">
-    <button mat-menu-item>Product Teams</button>
-    <button *ngFor="let enum of teams | keyvalue" mat-menu-item>{{ enum.value}}</button>
+    <!-- <button (click)="onSelect('all')" mat-menu-item>Product Teams</button> -->
+    <button (click)="onSelect(enum)" *ngFor="let enum of teams | keyvalue" mat-menu-item>{{ enum.value}}</button>
 </mat-menu>

@@ -3,7 +3,7 @@
     <div class="main-container">
         <infrrd-header></infrrd-header>
         <div class="user">
-            <infrrd-search-filter *ngIf="true"></infrrd-search-filter>
+            <infrrd-search-filter *ngIf="empService.searchFilterOpen"></infrrd-search-filter>
             <infrrd-employees></infrrd-employees>
         </div>
     </div>
